@@ -1,0 +1,300 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Redimensión de fuente utilizando rem */
+
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-content {
+    width: 50%;
+    float: left;
+}
+
+.column-25 {
+    width: 25%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+/* otras reglas */
+
+ol {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.divSection {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+    border-radius: 3vw;
+    background-color: #ffffff;
+    h3 {
+        font-size: 2.5vw;
+        margin: 0;
+        text-align: center;
+        margin-top: 4%;
+        color: transparent;
+        background: #242424;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    }
+    .smallShadow();
+}
+
+.bigSection {
+    width: 95%;
+    margin-top: 5%;
+    padding-top: 3%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+    border-radius: 3vw;
+    background-color: #c7c7c7;
+    h1 {
+        font-size: 5vw;
+        margin: 0;
+        text-align: center;
+        margin-top: 4%;
+        color: transparent;
+        background: #242424;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    }
+    h2 {
+        font-size: 4vw;
+        margin: 0;
+        text-align: center;
+        margin-top: 4%;
+        color: #333333;
+        background: #c7c7c7;
+        text-shadow: 3px 3px 0px #FFFFFF, 8px 6px 2px rgba(0,0,0,0.3);
+    }
+    p {
+        font-size: 2vw;
+        margin: 0;
+        text-align: center;
+        margin-top: 4%;
+        padding: 7%;
+        color: #ffffff;
+        text-shadow: 0 1px 0 #242424, 0 2px 0 #353535, 0 3px 0 rgb(75, 75, 75), 0 4px 0 #5c5c5c, 0 5px 0 rgb(83, 83, 83), 0px 0px 8px rgba(0, 0, 0, 1), 0px 6px 8px rgba(0, 0, 0, 0.6);
+    }
+    .shadow();
+}
+
+.centerWithCoolBorders {
+    width: 14vw;
+    height: 14vw;
+    margin: 4%;
+    margin-top: 12%;
+    margin-left: 8%;
+    border-radius: 10%;
+    .shadow();
+}
+
+.centerWithSmallBorders {
+    width: 14vw;
+    height: 14vw;
+    margin: 4%;
+    margin-top: 12%;
+    margin-left: 18%;
+    margin-bottom: 15%;
+    border-radius: 10%;
+    .smallShadow();
+}
+@sh: 0.3vw;
+.smallShadow {
+    border: 8px solid #0055c5;
+    -webkit-box-shadow: @sh @sh 0px 0px #1f69c9, @sh*2 @sh*2 0px 0px #447dc7, @sh*3 @sh*3 0px 0px #6c92c4, @sh*4 @sh*4 0px 0px #94a8c2, @sh*5 @sh*5 0px 0px #b0b9c5, @sh @sh @sh*3 @sh rgba(0,0,0,0); 
+    box-shadow: @sh @sh 0px 0px #1f69c9, @sh*2 @sh*2 0px 0px #447dc7, @sh*3 @sh*3 0px 0px #6c92c4, @sh*4 @sh*4 0px 0px #94a8c2, @sh*5 @sh*5 0px 0px #b0b9c5, @sh @sh @sh*3 @sh rgba(0,0,0,0);
+}
+.shadow {
+    border: 8px solid #008ce9;
+    -webkit-box-shadow: @sh @sh 0px 0px #289FED, @sh*2 @sh*2 0px 0px #5FB8FF, @sh*3 @sh*3 0px 0px #A1D8FF, @sh*4 @sh*4 0px 0px #CAE6FF, @sh*5 @sh*5 0px 0px #E1EEFF, @sh @sh @sh*3 @sh rgba(0,0,0,0); 
+    box-shadow: @sh @sh 0px 0px #289FED, @sh*2 @sh*2 0px 0px #5FB8FF, @sh*3 @sh*3 0px 0px #A1D8FF, @sh*4 @sh*4 0px 0px #CAE6FF, @sh*5 @sh*5 0px 0px #E1EEFF, @sh @sh @sh*3 @sh rgba(0,0,0,0);
+}
+
+.index{
+    margin-top: 9%;
+    width: 20%;
+    margin-left: 1%;
+    li, a {
+        font-size: 2vw;
+        margin: 0;
+        text-align: center;
+        margin-top: 12%;
+        margin-left: -25%;
+        color: #ffffff;
+        text-shadow: 0 1px 0 #242424, 0 2px 0 #353535, 0 3px 0 rgb(75, 75, 75), 0 4px 0 #5c5c5c, 0 5px 0 rgb(83, 83, 83), 0px 0px 8px rgba(0, 0, 0, 1), 0px 6px 8px rgba(0, 0, 0, 0.6);
+    }
+    li {
+        margin-left: 17.5%;
+    }
+
+    ol {
+        padding-bottom: 8%;
+    }
+    float: left;
+    position: fixed;
+}
+
+.content {
+    margin-left: 47%;
+}
+
+.noticias{
+    width: 25%;
+    margin-left: 73%;
+    margin-top: 0.7%;
+    float: left;
+    position: fixed;
+    p {
+        font-size: 1.5vw;
+        margin: -5% 5%;
+    }
+    img {
+        .centerWithSmallBorders();
+        margin-left: 20%;
+        margin-bottom: 7%;
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .index {
+        float: left;
+        position: relative;
+    }
+    .noticias {
+        float: left;
+        position: relative;
+        margin: 0%;
+        margin-left: 1vw;
+        width: 100%;
+    }
+    .content {
+        margin-left: 0%;
+        float: left;
+        position: relative;
+    }
+    .column-5{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .index, .column-content, .noticias {
+        width: 90%;
+        margin: 0;
+        margin-left: 4%;
+    }
+    .column-content {
+        margin-left: 6%;
+    }
+    .bigSection h1 {
+        font-size: 10vw;
+    }
+    .bigSection h2 {
+        font-size: 7vw;
+    }
+    .bigSection p {
+        font-size: 4vw;
+    }
+    .index li{
+        font-size: 4vw;
+        margin-left: 35%;
+        margin-top: 6%;
+    }
+    .index a {
+        font-size: 4vw;
+        margin-left: -40%;
+        margin-top: 6%;
+    }
+    .centerWithCoolBorders {
+        width: 24vw;
+        height: 24vw;
+        margin: 4%;
+        margin-top: 12%;
+        margin-left: 8%;
+        border-radius: 10%;
+    }
+    .centerWithSmallBorders {
+        width: 24vw;
+        height: 24vw;
+        margin: 4%;
+        margin-top: 12%;
+        margin-left: 18%;
+        margin-bottom: 15%;
+        border-radius: 10%;
+    }
+    .divSection h3 {
+        font-size: 6vw;
+        padding-top: 2%;
+    }
+    .bigSection img {
+        width: 24vw;
+        height: 24vw;
+    }
+    .marginSection {
+        margin-left: 15%;
+    }
+}
